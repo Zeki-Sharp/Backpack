@@ -7,11 +7,11 @@ public class PlayerStatus : MonoBehaviour
 
     // 玩家属性
     public int health = 100;    // 生命值
-    public int attack = 10;     // 攻击力
+    public int mana = 10;     // 
 
     // 显示属性的 UI 元素
     [SerializeField] private TextMeshProUGUI healthText;
-    [SerializeField] private TextMeshProUGUI attackText;
+    [SerializeField] private TextMeshProUGUI manaText;
 
     void Awake()
     {
@@ -44,9 +44,9 @@ public class PlayerStatus : MonoBehaviour
     /// <summary>
     /// 增加攻击力
     /// </summary>
-    public void ChangeAttack(int amount)
+    public void ChangeMana(int amount)
     {
-        attack += amount;
+        mana += amount;
         UpdateUI();
     }
 
@@ -60,9 +60,9 @@ public class PlayerStatus : MonoBehaviour
             healthText.text = $"Health: {health}";
         }
 
-        if (attackText != null)
+        if (manaText != null)
         {
-            attackText.text = $"Attack: {attack}";
+            manaText.text = $"Mana: {mana}";
         }
     }
 }

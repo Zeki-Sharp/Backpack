@@ -2,4 +2,6 @@ ID,Name,Effect,EffectQuantity,Description ,Quantity,iconPath
 1,Health Potion ,Heal,20,Restores HP by 20,5,icons/health_potion
 2,Great Health Potion ,Heal,40,Restores HP by 40,3,icons/great_health_potion
 3,Giant Health Potion,Heal,60,Restores HP by 60,6,icons/giant_health_potion
-4,Attack Potion,PowerUp,20,Increase power by 20,20,icons/health_potion
+4,Mana Potion,PowerUp,5,Increase mana by 5,20,icons/mana_potion
+5,Great Mana Potion,PowerUp,10,Increase mana by 10,20,icons/great_mana_potion
+6,Giant Mana Potion,PowerUp,20,Increase mana by 20,10,icons/giant_mana_potion

@@ -49,7 +49,7 @@ public class Item
                 PlayerStatus.Instance.ChangeHealth(effectQuantity);
                 break;
             case "powerup":
-                PlayerStatus.Instance.ChangeAttack(effectQuantity);
+                PlayerStatus.Instance.ChangeMana(effectQuantity);
                 break;
             default:
                 Debug.LogWarning($"Unknown effect: {effect}");
