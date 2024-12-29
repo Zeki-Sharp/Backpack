@@ -1,0 +1,5 @@
+ID,Name,Effect,EffectQuantity,Description ,Quantity,iconPath
+1,Health Potion ,Heal,20,Restores HP by 20,5,icons/health_potion
+2,Great Health Potion ,Heal,40,Restores HP by 40,3,icons/great_health_potion
+3,Giant Health Potion,Heal,60,Restores HP by 60,6,icons/giant_health_potion
+4,Attack Potion,PowerUp,20,Increase power by 20,20,icons/health_potion

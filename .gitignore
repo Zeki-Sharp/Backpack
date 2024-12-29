@@ -1,0 +1,32 @@
+# Unity-specific
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Visual Studio-specific
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Others
+*.swp
+*.bak
+*.log
+*.lock
+*.tmp
+*.temp
