@@ -30,3 +30,7 @@ Thumbs.db
 *.lock
 *.tmp
 *.temp
+
+# 忽略 SSH 密钥文件
+id_ed25519
+id_ed25519.pub
