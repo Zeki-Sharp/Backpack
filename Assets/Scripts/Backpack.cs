@@ -12,6 +12,7 @@ public class Backpack : MonoBehaviour
 
     public Transform itemButtonParent;
     public GameObject itemButtonPrefab;
+    public TextAsset csvFile; // 需要通过 Unity 编辑器拖拽 CSV 文件
 
     void Awake()
     {
@@ -24,6 +25,34 @@ public class Backpack : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void Start()
+    {
+        // 初始化背包并加载 CSV 文件中的物品
+        LoadItemsFromCSV();
+    }
+
+    /// <summary>
+    /// 从 CSV 文件读取道具并初始化背包
+    /// </summary>
+    private void LoadItemsFromCSV()
+    {
+        if (csvFile == null)
+        {
+            Debug.LogError("CSV file not assigned! Please assign a valid CSV file.");
+            return;
+        }
+
+        // 使用 CSVReader 读取道具列表
+        List<Item> loadedItems = CSVReader.ReadItemsFromCSV(csvFile);
+
+        // 将读取的道具添加到背包
+        foreach (Item item in loadedItems)
+        {
+            AddItem(item);
+        }
+    }
+
 
     /// <summary>
     /// 添加道具到背包

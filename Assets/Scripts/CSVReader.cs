@@ -44,7 +44,7 @@ public class CSVReader : MonoBehaviour
                 continue;
             }
 
-            string[] values = line.Split(',');
+            string[] values = line.Split(new char[] { ',' }, System.StringSplitOptions.RemoveEmptyEntries); // 去除空项
 
             // 检查列数是否足够
             if (values.Length < 7)

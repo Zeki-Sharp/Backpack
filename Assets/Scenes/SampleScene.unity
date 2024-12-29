@@ -514,7 +514,6 @@ GameObject:
   - component: {fileID: 1387674480}
   - component: {fileID: 1387674479}
   - component: {fileID: 1387674478}
-  - component: {fileID: 1387674483}
   - component: {fileID: 1387674482}
   m_Layer: 5
   m_Name: Canvas
@@ -620,20 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButtonParent: {fileID: 1102644523}
   itemButtonPrefab: {fileID: 3411226433488365873, guid: 814ce044465ff1b43a9db2c1d0994daf, type: 3}
---- !u!114 &1387674483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387674477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f36c8fee7c4e04fac620d7bdcf99df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 8b474c043fef8d149996f4d4cbde164b, type: 3}
-  backpack: {fileID: 1387674482}
 --- !u!1 &1689694069
 GameObject:
   m_ObjectHideFlags: 0
