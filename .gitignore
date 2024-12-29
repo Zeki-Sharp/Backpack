@@ -34,3 +34,5 @@ Thumbs.db
 # 忽略 SSH 密钥文件
 id_ed25519
 id_ed25519.pub
+ssh-keygen -t ed25519 -C 571258652@qq.com
+ssh-keygen -t ed25519 -C 571258652@qq.com.pub
